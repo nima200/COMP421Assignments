@@ -1,0 +1,13 @@
+\documentclass[11pt]{article}
+
+\begin{document}
+Exercise 3 (Relational Algebra)
+\begin{enumerate}
+\item \[ \Pi_{city,streetaddr} (\sigma_{province='PQ'}(Branch)) \]
+\item \[ \Pi_{custid}(\sigma_{balance<500}(\sigma_{atype='savings'}(Account))) \] 
+\item \[ \Pi_{acctid}(Account \bowtie_{ Customer.name = 'Madea\ Fakename' $ \allowbreak
+$ \wedge  Account.custid = Customer.custid  \wedge Account.atype = 'savings' } Customer) \]
+\item \[ \Pi_{custid}(Customer \bowtie_{Customer.custid = account.custid \wedge Account.startdate - '2017-01-01' \geq 0 \wedge Account.atype = 'savings'}Account) \]
+\end{enumerate}
+
+\end{document}
